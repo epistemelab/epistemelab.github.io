@@ -1,0 +1,171 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    min-height: 800px;
+    position: absolute;
+    margin: 0;
+    
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gradient {
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,#000 67%);
+    height: 666px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    pointer-events: none;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;    
+    background-image: cover;
+}
+
+.container .episteme-header {
+    width: 80%;
+    position: absolute;
+    top: 200px;
+    z-index: 3;
+    left: 10%;
+}
+
+
+.container .episteme-title {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 10vmin;
+    font-weight: 900;
+    font-family: 'Open Sans',sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6rem;
+    text-shadow: 0 0 1px rgba(0,0,0,.1);
+    line-height: 1.2;
+}
+
+
+.container .episteme-desc {
+    font-size: 4vmin;
+    width: 70%;
+    left: 15%;
+    color: white;
+    top: 150px;
+    position: absolute;
+    font-weight: 300;
+}
+
+.episteme-placeholder {
+    display: inline-block !important;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.episteme-cursor {
+    display: inline-block;    
+}
+
+.episteme-cursor.on {
+    opacity: 1.0;
+    transition: opacity 500ms;
+}
+
+.episteme-cursor {
+    opacity: 0.0;
+    transition: opacity 500ms;
+}
+
+.cta {
+    position: absolute;
+    text-align: center;
+    background: rgba(0,0,0,.65);
+    width: 50%;
+    top: 250px;
+    height: 90px;
+    transition: height 500ms;
+    left: 25%;
+    position: absolute;
+    z-index: 1;
+    border-radius: 3px;
+}
+
+.cta .email {
+    border: none;
+    border-radius: 3px;
+    height: 44px; /*can't we use 100%?*/
+    width: 250px;
+    padding: 0;
+    padding-left: 20px;
+    font-weight: 500;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.cta .email:focus {
+    outline: none;
+}
+
+.cta .form .btn {
+    height: 44px;
+    font-size: 20px;
+    top: 0px;
+    border: none;
+}
+
+.cta .form {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.cta .form .message {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.episteme-desc a {
+    text-decoration: none;
+    color: white;
+}
+
+.episteme-desc a:hover {
+    text-decoration: underline;
+}
+
+.events tr {
+    text-align: left;
+    font-size: 17px;
+    font-family: "Open Sans", Helvetica;
+}
+
+.events tr.tr-title {
+    font-size: 22px;
+    text-align: center !important;
+}
+
+
+.nav-pills > li > a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #222222;
+}
